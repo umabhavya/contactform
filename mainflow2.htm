@@ -1,0 +1,368 @@
+[5:09 PM, 9/5/2024] Uma Cse: html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-image: url('https://via.placeholder.com/1500x800');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background-color: #e67e22;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #d35400;
+        }
+
+        /* Features Section Styles */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .feature {
+            text-align: center;
+            width: 30%;
+        }
+
+        .feature h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .feature p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        /* Contact Form Styles */
+        .contact {
+            padding: 60px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background-color: #e67e22;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #d35400;
+        }
+
+        #formMessage {
+            color: red;
+        }
+
+        /* Slideshow Styles */
+        .slideshow {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .mySlides img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Toggle Section Styles */
+        .toggle-section {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        #toggleButton {
+            background-color: #e67e22;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #toggleButton:hover {
+            background-color: #d35400;
+        }
+
+        #toggleContent {
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .nav-links li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyWebsite</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to MyWebsite</h1>
+            <p>Your journey to success starts here.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h2>Feature 1</h2>
+            <p>Description of the first feature.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature 2</h2>
+            <p>Description of the second feature.</p>
+        </div>
+        <div class="feature">
+            <h2>Feature 3</h2>
+            <p>Description of the third feature.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+            <p id="formMessage"></p>
+        </form>
+    </section>
+
+    <!-- Image Slideshow Section -->
+    <section class="slideshow">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="https://via.placeholder.com/1500x800" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="https://via.placeholder.com/1500x800/ff0000" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="https://via.placeholder.com/1500x800/00ff00" style="width:100%">
+            </div>
+        </div>
+    </section>
+
+    <!-- Toggle Content Section -->
+    <section class="toggle-section">
+        <button id="toggleButton">Show More</button>
+        <div id="toggleContent" style="display: none;">
+            <h2>Additional Content</h2>
+            <p>This content is shown or hidden when the button is clicked.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Contact Form Validation
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const formMessage = document.getElementById('formMessage');
+            
+            if (name === '' || email === '' || message === '') {
+                formMessage.textContent = 'Please fill out all fields.';
+            } else {
+                formMessage.textContent = 'Thank you for your message!';
+                // Here you would handle form submission (e.g., send data to server)
+            }
+        });
+
+        // Image Slideshow
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            const slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  // Hide all slides
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }  // Loop back to first slide
+            slides[slideIndex-1].style.display = "block";  // Show the current slide
+            setTimeout(showSlides, 30000);  // Change slide every 60 seconds
+        }
+
+        // Toggle Button
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            const content = document.getElementById('toggleContent');
+            const button = document.getElementById('toggleButton');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                button.textContent = 'Show Less';
+            } else {
+                content.style.display = 'none';
+                button.textContent = 'Show More';
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+This completes the JavaScript for both the slideshow and the toggle button functionalities.
